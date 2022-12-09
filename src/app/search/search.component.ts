@@ -13,11 +13,7 @@ export class SearchComponent {
 
   changeValue(event: Event){
     this.searchValue= (<HTMLInputElement>event.target).value
-
-
-
   
-    
   }
 
 }
