@@ -6,6 +6,7 @@ import { ConatinerComponent } from './Container/container.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { NotificationComponent } from './notification/notification.component';
+import { SearchComponent } from './search/search.component';
 
 
 
@@ -15,7 +16,8 @@ import { NotificationComponent } from './notification/notification.component';
     ConatinerComponent,
     NavbarComponent,
     HeaderComponent,
-    NotificationComponent
+    NotificationComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule
