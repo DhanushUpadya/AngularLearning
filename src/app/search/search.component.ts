@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class SearchComponent {
 
-  searchValue:string=""
+  searchValue:string="Type Something"
 
 
 
