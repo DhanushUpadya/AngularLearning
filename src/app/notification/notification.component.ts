@@ -2,14 +2,15 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-notification',
-  template: `<div class="alert alert-success" [hidden]="displayNotification"> 
+  template: `<div class="alert alert-success" [ngClass]="{fadeout: displayNotification}"> 
                This website uses cookies to provide better user experience.
         
                <div class="close"><button class="btn" (click)="closeNotification($event)">X</button></div>
             
               </div>`,
   styles: ["div{margin: 10px 0px; padding: 10px 20px; text-align:center;}", 
-          "p{font-size: 14px;}",".close{float:right;margin-top:-15px;}"
+          "p{font-size: 14px;}",".close{float:right;margin-top:-15px;}",
+          ".fadeout{visibility: hidden ; opacity:0; transition: visibility 0s 2s, opacity 2s linear;}"
           ]
 })
 export class NotificationComponent {
